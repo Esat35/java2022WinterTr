@@ -11,6 +11,7 @@ public class VolvoRunner {
         arb2.yakit="Elektrikli";
         arb2.elektrikliMi=true;
         arb2.model="XC90";
-        System.out.println(arb2.toString()); // Model : XC90 Yakit : Elektrikli Max Hiz : 240
+        arb2.maxHiz= arb2.maxHizAta();
+        System.out.println(arb2.toString()); // Model : XC90 Yakit : Elektrikli Max Hiz : 160
     }
 }

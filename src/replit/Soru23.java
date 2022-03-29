@@ -16,15 +16,23 @@ public class Soru23 {
         List<Integer> list = new ArrayList<Integer>();
         boolean asalMı=true;
         int adet = 0;
-        while (adet<=10){
-            for (int i = 2; i <100;i++){
+
+
+        while (adet<10){
+            for (int i = 2; i <input;i++){
                 if (input%i==0){
                     asalMı=false;
                 }
-            }
-            adet++;
-        }
 
+            }
+            if (asalMı){
+                list.add(input);
+                adet++;
+
+            }
+            input++;
+        }
+        System.out.println(list);
     }
 
 }

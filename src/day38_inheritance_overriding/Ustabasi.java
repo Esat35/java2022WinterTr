@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class Ustabasi extends Isci{
     public String statu="Ustabasi";
-    public String haklar="Ustabasi haftada birgun ekstra tatil hakkina sahiptir";
+    public  String haklar="Ustabasi haftada birgun ekstra tatil hakkina sahiptir";
 
     public void mesai(){
         System.out.println("Ariza varsa Ustabasi ekstra ucret almadan calisir");

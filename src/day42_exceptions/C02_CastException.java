@@ -4,6 +4,7 @@ public class C02_CastException {
 
 
         int sayi=10;
+
         // String str=sayi; CTE
 
         Object str3="Java cok guzel";

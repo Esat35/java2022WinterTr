@@ -12,6 +12,7 @@ public class C04_IstenenElemanlariSilme {
         output: [23,40]
          */
         List<Integer> liste= new ArrayList<>();
+
         liste.add(2);
         liste.add(13);
         liste.add(56);
@@ -19,8 +20,11 @@ public class C04_IstenenElemanlariSilme {
         liste.add(45);
         liste.add(14);
         liste.add(40);
+
         ListIterator itr =liste.listIterator();
+
         while (itr.hasNext()){
+
             Object sayi=itr.next();
             if ((Integer)sayi<20 || (Integer)sayi>40){
                 itr.remove();

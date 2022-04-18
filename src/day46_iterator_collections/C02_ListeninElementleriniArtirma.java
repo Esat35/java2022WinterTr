@@ -2,6 +2,8 @@ package day46_iterator_collections;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.ListIterator;
+
 public class C02_ListeninElementleriniArtirma {
     public static void main(String[] args) {
         // verilen listedeki her elementi 3 artirin
@@ -17,10 +19,13 @@ public class C02_ListeninElementleriniArtirma {
         /* listenin tum elementlerini bize getirmesi icin
            iterator'un hasNext() ve next() methodlarini kullanacagiz
          */
-        Iterator itr = liste.iterator();
+        ListIterator itr = liste.listIterator();
 
         while(itr.hasNext()){ // yaninda element oldugu muddetce calisacak
-            System.out.println(itr.next());
+            Object sayı=itr.next();
+            itr.set((Integer)sayı+3);
+
         }
+        System.out.println(liste);
     }
 }

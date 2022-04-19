@@ -1,0 +1,51 @@
+GİTHUB KOMUTLARI
+BRANCH OLUŞTURMA
+git branch isim(kendi bilgisayarınızda branch olusturdunuz)
+git branch (branch kontrol)
+*master
+deniz
+git checkout deniz(branch degiştirme)
+git branch (branch kontrol)
+master
+*deniz
+BURADAN SONRASI CLONE EDİLMİŞ REPOSITORY DE MASTER VE
+BRANCHE BİLGİ GÖNDERME VE ALMA KOMUTLARINI GÖRECEKSİNİZ
+git checkout deniz(branch degiştirme)
+git branch (branch kontrol)
+master
+*deniz
+git add .
+git commit -m "ilk proje"
+git push  (github proje branchinize gönderdiniz)
+git checkout master(branch degiştirme)
+git branch (branch kontrol)
+*master
+deniz
+git merge deniz (kendi bilgisayarınızdaki branchi gene kendi
+bilgisayarınızdaki master ile birlestirdiniz )
+git add .
+git commit -m "ilk proje"
+git push  (github proje mastera gönderdiniz)
+(Burada hata verebilir)
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/DzKKaya/TEAM-04.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+(Buradaki hata uyuşmazlık hatası bunu
+cözmek icin asagıdaki kodları takip edin)
+git fetch
+git pull
+git add .
+git commit -m "ilk proje"
+git push
+Diger arkadasların mastera gönderdiklerini cekmek icin
+git pull
+suan local master github masterla aynı
+simdi local branch guncellemek icin
+git checkout deniz(branch degiştirme)
+git branch (branch kontrol)
+master
+*deniz
+git merge master (suan hem local hem github aynı)
